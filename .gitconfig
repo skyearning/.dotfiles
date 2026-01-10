@@ -1,0 +1,13 @@
+[user]
+	email = skyearning@gmail.com
+	name = skyearning
+[init]
+	defaultBranch = main
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	graph = log --all --graph --decorate --oneline
