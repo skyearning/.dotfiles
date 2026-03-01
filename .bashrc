@@ -91,6 +91,14 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias python='python3'
+
+# functions 
+backup() { 
+	for file in "$@"; do 
+	cp "$file" "${file%.*}_$(date +%Y-%m-%d).${file##*.}"; 
+	done
+}
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -115,3 +123,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Created by `pipx` on 2026-01-10 09:33:21
+export PATH="$PATH:/home/ottoxu/.local/bin"
+eval "$(zoxide init bash)"

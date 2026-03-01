@@ -11,3 +11,5 @@
 	unstage = reset HEAD --
 	last = log -1 HEAD
 	graph = log --all --graph --decorate --oneline
+[core]
+	excludesFile = /home/ottoxu/.gitignore_global
