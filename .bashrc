@@ -92,6 +92,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias python='python3'
+alias fd='fdfind'
 
 # functions 
 backup() { 
