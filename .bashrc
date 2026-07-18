@@ -82,6 +82,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+else
+	alias ls='ls -G'
 fi
 
 # colored GCC warnings and errors
@@ -93,6 +95,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias python='python3'
 alias fd='fdfind'
+alias pip='pip3'
 
 # functions 
 backup() { 
